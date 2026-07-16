@@ -515,4 +515,4 @@ docs/screenshots/constraints.png
 
 AI Engineering student at ITMO University
 
-GitHub: `https://github.com/your-username`
+GitHub: `https://github.com/7SUNNY77`

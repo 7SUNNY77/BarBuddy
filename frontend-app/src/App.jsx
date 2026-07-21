@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 
-const API_URL = "http://127.0.0.1:8000/api/cocktails";
+const API_URL = "https://barbuddy-api.onrender.com/api/cocktails";
 
 function getCocktailEmoji(glass = "") {
   const normalizedGlass = glass.toLowerCase();

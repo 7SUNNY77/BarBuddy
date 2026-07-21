@@ -151,7 +151,9 @@ function App() {
         setCocktails(catalog);
       } catch (requestError) {
         console.error(requestError);
-        setError("Не удалось загрузить каталог. Запусти backend на порту 8000.");
+        setError(
+          `Не удалось загрузить каталог: ${requestError.message}`
+        );
       } finally {
         setLoading(false);
       }

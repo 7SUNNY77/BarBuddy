@@ -130,6 +130,9 @@ function App() {
   const [detailsLoading, setDetailsLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const telegramUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
+  const userName = telegramUser?.first_name;
+
   useEffect(() => {
     async function loadCatalog() {
       try {
@@ -329,6 +332,11 @@ function App() {
         <p className="hero-text">
           Классические коктейли с ингредиентами и инструкциями.
         </p>
+        {userName && (
+          <p className="telegram-greeting">
+            Привет, {userName}! Найдём твой идеальный коктейль.
+          </p>
+        )}
       </header>
 
       <section className="recommendation-box">

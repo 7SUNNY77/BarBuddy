@@ -38,57 +38,77 @@ function getCocktailEmoji(glass = "") {
 function getCocktailCover(tasteTags = []) {
   const tags = tasteTags.join(" ").toLowerCase();
 
-  if (
-    tags.includes("кофейн") ||
-    tags.includes("шоколад") ||
-    tags.includes("сливочн")
-  ) {
+  if (tags.includes("кофейн")) {
     return "cover-coffee";
   }
 
-  if (
-    tags.includes("ягод") ||
-    tags.includes("малин") ||
-    tags.includes("вишн") ||
-    tags.includes("смородин")
-  ) {
+  if (tags.includes("шоколад")) {
+    return "cover-chocolate";
+  }
+
+  if (tags.includes("мятн")) {
+    return "cover-mint";
+  }
+
+  if (tags.includes("ягод") || tags.includes("малин") || tags.includes("вишн")) {
     return "cover-berry";
   }
 
-  if (
-    tags.includes("мятн") ||
-    tags.includes("освеж") ||
-    tags.includes("имбир")
-  ) {
-    return "cover-fresh";
+  if (tags.includes("цветочн") || tags.includes("фиалков")) {
+    return "cover-floral";
+  }
+
+  if (tags.includes("ананас") || tags.includes("кокос") || tags.includes("тропическ")) {
+    return "cover-tropical";
+  }
+
+  if (tags.includes("персик") || tags.includes("абрикос")) {
+    return "cover-peach";
+  }
+
+  if (tags.includes("текиль") || tags.includes("агав")) {
+    return "cover-tequila";
+  }
+
+  if (tags.includes("ромов")) {
+    return "cover-rum";
+  }
+
+  if (tags.includes("джинов")) {
+    return "cover-gin";
+  }
+
+  if (tags.includes("виски") || tags.includes("бурбонов")) {
+    return "cover-whiskey";
+  }
+
+  if (tags.includes("коньяч")) {
+    return "cover-cognac";
+  }
+
+  if (tags.includes("игрист") || tags.includes("винн")) {
+    return "cover-sparkling";
   }
 
   if (
-    tags.includes("цитрус") ||
     tags.includes("лимон") ||
-    tags.includes("апельсин") ||
-    tags.includes("грейпфрут") ||
-    tags.includes("лайм")
+    tags.includes("цитрус") ||
+    tags.includes("лаймов") ||
+    tags.includes("грейпфрут")
   ) {
     return "cover-citrus";
   }
 
-  if (
-    tags.includes("тропическ") ||
-    tags.includes("ананас") ||
-    tags.includes("кокос") ||
-    tags.includes("персик")
-  ) {
-    return "cover-tropical";
+  if (tags.includes("имбир") || tags.includes("прян") || tags.includes("остр")) {
+    return "cover-spice";
   }
 
-  if (
-    tags.includes("виски") ||
-    tags.includes("коньяч") ||
-    tags.includes("согревающ") ||
-    tags.includes("прян")
-  ) {
-    return "cover-dark";
+  if (tags.includes("сливочн") || tags.includes("десертн")) {
+    return "cover-cream";
+  }
+
+  if (tags.includes("горьк") || tags.includes("травян")) {
+    return "cover-herbal";
   }
 
   return "cover-classic";
@@ -287,6 +307,17 @@ function App() {
     setRecommendations(rankedCocktails);
     setRecommendationVisible(true);
   }
+
+  useEffect(() => {
+    const telegram = window.Telegram?.WebApp;
+
+    if (!telegram) {
+      return;
+    }
+
+    telegram.ready();
+    telegram.expand();
+  }, []);
 
   return (
     <main className="app">

@@ -202,44 +202,128 @@ button {
 
 .cover-coffee {
   background:
-    radial-gradient(circle at 50% 105%, #d28b51 0, transparent 38%),
-    linear-gradient(135deg, #271b20, #6a3d35 52%, #241c33);
+    radial-gradient(circle at 18% 20%, rgb(240 166 97 / 38%), transparent 28%),
+    radial-gradient(circle at 50% 105%, #cb7a3b 0, transparent 38%),
+    linear-gradient(135deg, #201518, #5a2c24 52%, #241a37);
+}
+
+.cover-chocolate {
+  background:
+    radial-gradient(circle at 75% 18%, rgb(246 207 144 / 25%), transparent 25%),
+    radial-gradient(circle at 50% 105%, #b8784c 0, transparent 38%),
+    linear-gradient(135deg, #211716, #4a2921 52%, #37223a);
+}
+
+.cover-mint {
+  background:
+    radial-gradient(circle at 20% 18%, rgb(169 255 222 / 32%), transparent 26%),
+    radial-gradient(circle at 50% 105%, #5dd7a2 0, transparent 38%),
+    linear-gradient(135deg, #103b38, #14746a 52%, #17395a);
 }
 
 .cover-berry {
   background:
-    radial-gradient(circle at 50% 105%, #ef779b 0, transparent 38%),
-    linear-gradient(135deg, #35172b, #8b2c55 52%, #291a42);
+    radial-gradient(circle at 76% 17%, rgb(255 169 200 / 30%), transparent 27%),
+    radial-gradient(circle at 50% 105%, #e45f95 0, transparent 38%),
+    linear-gradient(135deg, #35132b, #82264e 52%, #331c53);
 }
 
-.cover-fresh {
+.cover-floral {
   background:
-    radial-gradient(circle at 50% 105%, #80e6be 0, transparent 38%),
-    linear-gradient(135deg, #123c40, #18716c 52%, #1a3151);
-}
-
-.cover-citrus {
-  background:
-    radial-gradient(circle at 50% 105%, #ffe075 0, transparent 38%),
-    linear-gradient(135deg, #4d3514, #a36e1e 52%, #2e2440);
+    radial-gradient(circle at 20% 18%, rgb(242 202 255 / 34%), transparent 28%),
+    radial-gradient(circle at 50% 105%, #b98eea 0, transparent 38%),
+    linear-gradient(135deg, #33204f, #754a9d 52%, #27335f);
 }
 
 .cover-tropical {
   background:
-    radial-gradient(circle at 50% 105%, #f6a563 0, transparent 38%),
-    linear-gradient(135deg, #5c2540, #b45047 52%, #352352);
+    radial-gradient(circle at 79% 17%, rgb(255 220 119 / 30%), transparent 26%),
+    radial-gradient(circle at 50% 105%, #f29450 0, transparent 38%),
+    linear-gradient(135deg, #59213d, #b34c45 52%, #4a2862);
 }
 
-.cover-dark {
+.cover-peach {
   background:
-    radial-gradient(circle at 50% 105%, #d79552 0, transparent 38%),
-    linear-gradient(135deg, #241b23, #68422c 52%, #2a2439);
+    radial-gradient(circle at 20% 18%, rgb(255 227 190 / 38%), transparent 28%),
+    radial-gradient(circle at 50% 105%, #f2a079 0, transparent 38%),
+    linear-gradient(135deg, #613548, #b66b67 52%, #4c315f);
+}
+
+.cover-tequila {
+  background:
+    radial-gradient(circle at 78% 16%, rgb(255 241 139 / 34%), transparent 26%),
+    radial-gradient(circle at 50% 105%, #d9be49 0, transparent 38%),
+    linear-gradient(135deg, #394025, #7b7b28 52%, #3b3156);
+}
+
+.cover-rum {
+  background:
+    radial-gradient(circle at 21% 18%, rgb(246 155 85 / 33%), transparent 27%),
+    radial-gradient(circle at 50% 105%, #c66a39 0, transparent 38%),
+    linear-gradient(135deg, #432025, #87412d 52%, #3b2445);
+}
+
+.cover-gin {
+  background:
+    radial-gradient(circle at 78% 17%, rgb(168 239 255 / 32%), transparent 27%),
+    radial-gradient(circle at 50% 105%, #54adc2 0, transparent 38%),
+    linear-gradient(135deg, #163547, #236879 52%, #252f5a);
+}
+
+.cover-whiskey {
+  background:
+    radial-gradient(circle at 20% 18%, rgb(255 196 106 / 31%), transparent 27%),
+    radial-gradient(circle at 50% 105%, #c87d37 0, transparent 38%),
+    linear-gradient(135deg, #281b1e, #694127 52%, #382745);
+}
+
+.cover-cognac {
+  background:
+    radial-gradient(circle at 78% 16%, rgb(255 189 113 / 34%), transparent 28%),
+    radial-gradient(circle at 50% 105%, #d6843e 0, transparent 38%),
+    linear-gradient(135deg, #3c2020, #7c3929 52%, #3c274a);
+}
+
+.cover-sparkling {
+  background:
+    radial-gradient(circle at 20% 17%, rgb(253 246 202 / 44%), transparent 26%),
+    radial-gradient(circle at 50% 105%, #d7cc8d 0, transparent 38%),
+    linear-gradient(135deg, #32414a, #718b86 52%, #3b3d63);
+}
+
+.cover-citrus {
+  background:
+    radial-gradient(circle at 79% 17%, rgb(255 237 126 / 38%), transparent 26%),
+    radial-gradient(circle at 50% 105%, #e2bb3f 0, transparent 38%),
+    linear-gradient(135deg, #4d3713, #9d741c 52%, #343059);
+}
+
+.cover-spice {
+  background:
+    radial-gradient(circle at 21% 18%, rgb(255 131 98 / 34%), transparent 27%),
+    radial-gradient(circle at 50% 105%, #d4503e 0, transparent 38%),
+    linear-gradient(135deg, #4c1f2d, #85333b 52%, #40254e);
+}
+
+.cover-cream {
+  background:
+    radial-gradient(circle at 78% 17%, rgb(255 238 211 / 42%), transparent 28%),
+    radial-gradient(circle at 50% 105%, #dcb57c 0, transparent 38%),
+    linear-gradient(135deg, #544033, #937152 52%, #493550);
+}
+
+.cover-herbal {
+  background:
+    radial-gradient(circle at 20% 18%, rgb(189 220 128 / 31%), transparent 27%),
+    radial-gradient(circle at 50% 105%, #799d51 0, transparent 38%),
+    linear-gradient(135deg, #253b2a, #4d6c3d 52%, #2b3d54);
 }
 
 .cover-classic {
   background:
-    radial-gradient(circle at 50% 105%, #ad8df4 0, transparent 38%),
-    linear-gradient(135deg, #292143, #57417e 52%, #1f3d55);
+    radial-gradient(circle at 78% 18%, rgb(191 166 255 / 30%), transparent 27%),
+    radial-gradient(circle at 50% 105%, #9581dc 0, transparent 38%),
+    linear-gradient(135deg, #282144, #55417d 52%, #1e3a57);
 }
 
 .card-image img,
@@ -790,5 +874,25 @@ button {
 
   .recommendation-form button {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: min(100% - 24px, 1240px);
+    padding-top: calc(24px + env(safe-area-inset-top));
+    padding-bottom: calc(44px + env(safe-area-inset-bottom));
+  }
+
+  .hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .cocktail-modal {
+    border-radius: 18px;
   }
 }

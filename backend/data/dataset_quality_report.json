@@ -1,0 +1,18 @@
+{
+  "total_cocktails": 90,
+  "cocktaildb_matched": 71,
+  "cocktaildb_unmatched": 19,
+  "rejected_ambiguous_matches": [
+    "Martinez",
+    "Planter's Punch",
+    "Tuxedo"
+  ],
+  "duplicate_ids": [],
+  "cocktails_without_ingredients": [],
+  "cocktails_without_instructions": [],
+  "categories": {
+    "Contemporary Classics": 31,
+    "New Era Drinks": 26,
+    "The Unforgettables": 33
+  }
+}

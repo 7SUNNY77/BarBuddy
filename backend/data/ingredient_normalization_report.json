@@ -1,0 +1,122 @@
+{
+  "unique_ingredients_before": 168,
+  "unique_ingredients_after": 154,
+  "renamed_entries_count": 23,
+  "changes": [
+    {
+      "cocktail": "Champagne Cocktail",
+      "old_name": "Angostura bitters",
+      "new_name": "Angostura Bitters"
+    },
+    {
+      "cocktail": "Irish Coffee",
+      "old_name": "Fresh cream",
+      "new_name": "Fresh Cream"
+    },
+    {
+      "cocktail": "Long Island Ice Tea",
+      "old_name": "White rum",
+      "new_name": "White Rum"
+    },
+    {
+      "cocktail": "Long Island Ice Tea",
+      "old_name": "Simple syrup",
+      "new_name": "Simple Syrup"
+    },
+    {
+      "cocktail": "Mimosa",
+      "old_name": "Fresh orange juice",
+      "new_name": "Fresh Orange Juice"
+    },
+    {
+      "cocktail": "Mint Julep",
+      "old_name": "Bourbon Whiskey",
+      "new_name": "Bourbon Whisky"
+    },
+    {
+      "cocktail": "Moscow Mule",
+      "old_name": "Fresh lime juice",
+      "new_name": "Fresh Lime Juice"
+    },
+    {
+      "cocktail": "Singapore Sling",
+      "old_name": "Angostura bitters",
+      "new_name": "Angostura Bitters"
+    },
+    {
+      "cocktail": "Zombie",
+      "old_name": "Fresh lime juice",
+      "new_name": "Fresh Lime Juice"
+    },
+    {
+      "cocktail": "Zombie",
+      "old_name": "Grenadine syrup",
+      "new_name": "Grenadine Syrup"
+    },
+    {
+      "cocktail": "Zombie",
+      "old_name": "Angostura bitters",
+      "new_name": "Angostura Bitters"
+    },
+    {
+      "cocktail": "New York Sour",
+      "old_name": "Simple syrup",
+      "new_name": "Simple Syrup"
+    },
+    {
+      "cocktail": "New York Sour",
+      "old_name": "Fresh lemon juice",
+      "new_name": "Fresh Lemon Juice"
+    },
+    {
+      "cocktail": "Paloma",
+      "old_name": "Fresh lime",
+      "new_name": "Fresh Lime"
+    },
+    {
+      "cocktail": "Paper Plane",
+      "old_name": "Bourbon Whiskey",
+      "new_name": "Bourbon Whisky"
+    },
+    {
+      "cocktail": "Russian Spring Punch",
+      "old_name": "Sugar syrup",
+      "new_name": "Sugar Syrup"
+    },
+    {
+      "cocktail": "Spritz",
+      "old_name": "Soda water",
+      "new_name": "Soda Water"
+    },
+    {
+      "cocktail": "Suffering Bastard",
+      "old_name": "Ginger beer",
+      "new_name": "Ginger Beer"
+    },
+    {
+      "cocktail": "VE.N.TO",
+      "old_name": "Fresh lemon Juice",
+      "new_name": "Fresh Lemon Juice"
+    },
+    {
+      "cocktail": "Yellow Bird",
+      "old_name": "White rum",
+      "new_name": "White Rum"
+    },
+    {
+      "cocktail": "Manhattan",
+      "old_name": "Rye Whiskey",
+      "new_name": "Rye Whisky"
+    },
+    {
+      "cocktail": "Vieux Carrè",
+      "old_name": "Rye Whiskey",
+      "new_name": "Rye Whisky"
+    },
+    {
+      "cocktail": "Whiskey Sour",
+      "old_name": "Bourbon Whiskey",
+      "new_name": "Bourbon Whisky"
+    }
+  ]
+}

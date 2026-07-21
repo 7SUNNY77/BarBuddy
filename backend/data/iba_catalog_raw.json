@@ -1,0 +1,632 @@
+[
+  {
+    "category":"Contemporary Classics",
+    "name":"Bellini",
+    "ingredients":"100 ml Prosecco,50 ml White Peach Puree",
+    "method":"Pour peach puree into the mixing glass with ice, add the Prosecco wine. Stir gently and pour in a chilled flute glass.  Note: PUCCINI - Fresh Mandarin Orange Juice; ROSSINI - Fresh Strawberry Puree; TINTORETTO - Fresh Pomegranate Juice.",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Black Russian",
+    "ingredients":"50 ml Vodka,20 ml Coffee Liqueur",
+    "method":"Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.  Note: WHITE RUSSIAN - Float fresh cream on the top and stir in slowly.",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Bloody Mary",
+    "ingredients":"45 ml Vodka,90 ml Tomato Juice,15 ml Fresh Lemon Juice,2 dashes Worcestershire Sauce,Tabasco,Celery Salt,Pepper (Up to taste)",
+    "method":"Stir gently all the ingredients in a mixing glass with ice, pour into rocks glass. Note: If requested served with ice, pour into highball glass.",
+    "garnish":"Celery, Lemon Wedge (Optional)"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Caipirinha",
+    "ingredients":"60 ml Cachaça,1 Lime cut into small wedges,4 Teaspoons White Cane Sugar",
+    "method":"Place lime and sugar into a double old fashioned glass and muddle gently. Fill the glass with cracked ice and add Cachaça. Stir gently to involve ingredients. Note: CAIPIROSKA - Instead of Cachaça use Vodka;",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Champagne Cocktail",
+    "ingredients":"90 ml Chilled Champagne,10 ml Cognac,2 dashes Angostura bitters,Few drops of Grand Marnier (optional),1 sugar cube",
+    "method":"Place the sugar cube with 2 dashes of bitters in a large Champagne glass, add the cognac. Pour gently chilled Champagne.",
+    "garnish":"Garnish with orange zest and maraschino cherry."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Corpse Reviver #2",
+    "ingredients":"30 ml Gin,30 ml Cointreau,30 ml Lillet Blanc,30 ml Fresh Lemon Juice,1 dash Absinthe",
+    "method":"Pour all ingredients into shaker with ice. Shake well and strain in chilled cocktail glass.",
+    "garnish":"Garnish with orange zest"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Cosmopolitan",
+    "ingredients":"40 ml Vodka Citron,15 ml Cointreau,15 ml Fresh Lime Juice,30 ml Cranberry Juice",
+    "method":"Add all ingredients into a cocktail shaker filled with ice. Shake well and strain into a large cocktail glass.",
+    "garnish":"Garnish with a lemon twist."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Cuba Libre",
+    "ingredients":"50 ml White Rum,120 ml Coca Cola,10 ml Fresh Lime Juice",
+    "method":"Build all ingredients in a highball glass filled with ice.",
+    "garnish":"Garnish with lime wedge."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"French 75",
+    "ingredients":"30 ml Gin,15 ml Fresh Lemon Juice,15 ml Sugar Syrup,60 ml Champagne",
+    "method":"Pour all the ingredients, except Champagne, into a shaker. Shake well and strain into a Champagne flute. Top up with Champagne. Stir gently.",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"French Connection",
+    "ingredients":"35 ml Cognac,35 ml Amaretto",
+    "method":"Pour all ingredients directly into an old fashioned glass filled with ice cubes. Stir gently.",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Golden Dream",
+    "ingredients":"20 ml Galliano,20 ml Triple Sec,20 ml Fresh Orange Juice,10 ml Fresh Cream",
+    "method":"Pour all ingredients into shaker filled with ice. Shake briskly for few seconds. Strain into chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Grasshopper",
+    "ingredients":"20 ml Crème de Cacao (White),20 ml Crème de Menthe (Green),20 ml Fresh Cream",
+    "method":"Pour all ingredients into shaker filled with ice. Shake briskly for few seconds. Strain into chilled cocktail glass.",
+    "garnish":"N\/A, optional mint leaf"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Hemingway Special",
+    "ingredients":"60 ml Rum,40 ml Grapefruit Juice,15 ml Maraschino Luxardo,15 ml Fresh Lime",
+    "method":"Pour all ingredients into a shaker with ice. Shake well and strain into a large cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Horse's Neck",
+    "ingredients":"40 ml Cognac,120 ml Ginger Ale,Dash of Angostura Bitters (optional)",
+    "method":"Pour Cognac and ginger ale directly into a highball glass with ice cubes. Stir gently. If preferred, add dashes of Angostura Bitter.",
+    "garnish":"Garnish with a rind of one lemon spiral."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Irish Coffee",
+    "ingredients":"50 ml Irish Whiskey,120 ml Hot coffee,50 ml Fresh cream (Chilled),1 teaspoon Sugar",
+    "method":"Warm black coffee is poured into a pre-heated Irish coffee glass. Whiskey and at least one teaspoon of sugar is added and stirred until dissolved. Fresh thick chilled cream is carefully poured over the back of a spoon held just above the surface of the coffee. The layer of cream will float on the coffee without mixing. Plain sugar can be replaced with sugar syrup",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"KIR",
+    "ingredients":"90 ml Dry White Wine,10 ml Crème de Cassis",
+    "method":"Pour Crème de Cassis into glass, top up with white wine. Note: KIR ROYAL - Use Champagne instead of white wine",
+    "garnish":null
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Long Island Ice Tea",
+    "ingredients":"15 ml Vodka,15 ml Tequila,15 ml White rum,15 ml Gin,15 ml Cointreau,30 ml Lemon juice,20 ml Simple syrup,Top with Cola",
+    "method":"Add all ingredients into a highball glass filled with ice. Stir gently.",
+    "garnish":"Lemon Slice (Optional)"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Mai-Tai",
+    "ingredients":"30 ml Amber Jamaican Rum,30 ml Martinique Molasses Rhum,15 ml Orange Curacao,15 ml Orgeat Syrup (Almond),30 ml Fresh Lime Juice,7.5 ml Simple Syrup",
+    "method":"Add all ingredients into a shaker with ice. Shake and pour into a double rocks glass or a highball glass.  The Martinique molasses rum used by Trader Vic was not an Agricole rum but a type of “rummy” from molasses.",
+    "garnish":"Garnish with pineapple spear, mint leaves, and lime peel."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Margarita",
+    "ingredients":"50 ml Tequila 100% Agave,20 ml Triple Sec,15 ml Freshly Squeezed Lime Juice",
+    "method":"Add all ingredients into a shaker with ice. Shake and strain into a chilled cocktail glass",
+    "garnish":"Half salt rim (Optional)"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Mimosa",
+    "ingredients":"75 ml Fresh orange juice,75 ml Prosecco",
+    "method":"Pour orange juice into a flute glass and gently pour the sparkling wine. Stir gently. Note: Also known as Buck's Fizz.",
+    "garnish":"Garnish with an orange twist (optional)."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Mint Julep",
+    "ingredients":"60 ml Bourbon Whiskey,4 fresh Mint sprigs,1 tsp Powdered Sugar,2 tsp Water",
+    "method":"In Julep Stainless Steel Cup gently muddle the mint with sugar and water. Fill the glass with cracked ice, add the Bourbon and stir well until the cup frosts.",
+    "garnish":"Garnish with a mint sprig."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Mojito",
+    "ingredients":"45 ml White Cuban Ron,20 ml Fresh Lime Juice,6 pcs Mint Sprigs,2 tsp White Cane Sugar,Soda Water",
+    "method":"Mix mint springs with sugar and lime juice. Add splash of soda water and fill the glass with ice. Pour the rum and top with soda water. Light stir to involve all ingredients.",
+    "garnish":"Garnish with sprigs of mint and slice of lime."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Moscow Mule",
+    "ingredients":"45 ml Smirnoff Vodka,120 ml Ginger Beer,10 ml Fresh lime juice",
+    "method":"In a Mule Cup or rocks glass, combine the vodka and ginger beer. Add lime juice and gently stir to involve all ingredients.",
+    "garnish":"Garnish with a lime slice"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Pina Colada",
+    "ingredients":"50 ml White Rum,30 ml Coconut Cream,50 ml Fresh Pineapple Juice",
+    "method":"Blend all the ingredients with ice in an electric blender, pour into a large glass, and serve with straws.  Note: Historically a few drops of fresh lime juice were added to taste. 4 slices of fresh pineapple can be used instead of juice",
+    "garnish":"Garnish with a slice of pineapple with a cocktail cherry."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Pisco Sour",
+    "ingredients":"60 ml Pisco,30 ml Fresh Lemon Juice,20 ml Simple Syrup,1 Raw Egg White",
+    "method":"Add all ingredients into a shaker with ice. Shake and strain into a chilled goblet glass.",
+    "garnish":"Few dashes of Amargo bitters on top as an aromatic garnish."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Sea Breeze",
+    "ingredients":"40 ml Vodka,120 ml Cranberry Juice,30 ml Grapefruit Juice",
+    "method":"Build all ingredients in a highball glass filled with ice.",
+    "garnish":"Garnish with orange zest and cherry"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Sex on the Beach",
+    "ingredients":"40 ml Vodka,20 ml Peach Schnapps,40 ml Fresh Orange Juice,40 ml Cranberry Juice",
+    "method":"Build all ingredients in a highball glass filled with ice.",
+    "garnish":"Garnish with a half orange slice."
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Singapore Sling",
+    "ingredients":"30 ml Gin,15 ml Cherry liqueur,7.5 ml Cointreau,7.5 ml DOM Bénédictine,120 ml Fresh Pineapple Juice,15 ml Fresh Lime Juice,10 ml Grenadine Syrup,A dash of Angostura bitters",
+    "method":"Pour all ingredients into a cocktail shaker filled with ice cubes. Shake well. Strain into Hurricane glass.",
+    "garnish":"Garnish with pineapple and maraschino cherry"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Tequila Sunrise",
+    "ingredients":"45 ml Tequila,90 ml Fresh Orange Juice,15 ml Grenadine Syrup",
+    "method":"Pour tequila and orange juice directly into highball glass filled with ice cubes. Add the grenadine syrup to create chromatic effect (sunrise), do not stir.",
+    "garnish":"Garnish with half orange slice or an orange zest"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Vesper",
+    "ingredients":"45 ml Gin,15 ml Vodka,7.5 ml Lillet Blanc",
+    "method":"Pour all ingredients into a cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
+    "garnish":"Lemon zest"
+  },
+  {
+    "category":"Contemporary Classics",
+    "name":"Zombie",
+    "ingredients":"45 ml Jamaican dark rum,45 ml Gold Puerto Rican rum,30 ml Demerara Rum,20 ml Fresh lime juice,15 ml Falernum,15 ml Donn's Mix,1 tsp Grenadine syrup,1 dash Angostura bitters,6 drops Pernod",
+    "method":"Add all ingredients into an electric blender with 170 grams of cracked ice. With pulse bottom blend for a few seconds. Serve in a tall tumbler glass.  Note: Donn's Mix: 2 parts of fresh yellow grapefruit and 1 part of cinnamon syrup",
+    "garnish":"Garnish with mint leaves."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Barracuda",
+    "ingredients":"45 ml Gold Rum,15 ml Galliano,60 ml Fresh Pineapple Juice,1 dash Fresh Lime Juice,Top up with Prosecco",
+    "method":"Pour all ingredients into cocktail shaker except the Prosecco, shake well with ice, strain into chilled highball glass filled with ice and top up with Prosecco.",
+    "garnish":"Pineapple and Cherry, optional mint sprig for additional aroma."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Bee's Knees",
+    "ingredients":"52.5 ml Dry Gin,2 teaspoons Honey Syrup,22.5 ml Fresh Lemon Juice,22.5 ml Fresh Orange Juice",
+    "method":"Stir honey with lemon and orange juices until it dissolves, add gin and shake with ice. Strain into a chilled cocktail glass.",
+    "garnish":"Optionally garnish with a lemon or orange zest."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Bramble",
+    "ingredients":"50 ml Gin,25 ml Fresh Lemon Juice,12.5 ml Sugar Syrup,15 ml Crème de Mûre",
+    "method":"Pour all ingredients into a cocktail shaker except the Crème de Mûre, shake well with ice, strain into chilled old fashioned glass filled with crushed ice, then pour the blackberry liqueur (Crème de Mûre) over the top of the drink, in a circular motion.",
+    "garnish":"Garnish optionally with a lemon slice and blackberries."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Canchanchara",
+    "ingredients":"60 ml Cuban Aguardiente,15 ml Fresh Lime Juice,15 ml Raw Honey,50 ml Water",
+    "method":"Mix honey with water and lime juice and spread the mixture on the bottom and sides of the glass. Add cracked ice, and then the rum. End by energetically stirring from bottom to top.",
+    "garnish":"Lime wedge."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Dark ‘n' stormy",
+    "ingredients":"60 ml Goslings Rum,100 ml Ginger Beer",
+    "method":"In a highball glass filled with ice pour the ginger beer and top floating with the Rum.",
+    "garnish":"Garnish with a lime wedge or slice."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Espresso Martini",
+    "ingredients":"50 ml Vodka,30 ml Kahlúa,10 ml Sugar Syrup,1 strong Espresso",
+    "method":"Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Fernandito",
+    "ingredients":"50 ml Fernet Branca,Fill up with Cola",
+    "method":"Pour the Fernet Branca into a double old fashioned glass with ice, fill the glass up with Cola. Gently stir.",
+    "garnish":null
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"French Martini",
+    "ingredients":"45 ml Vodka,15 ml Raspberry Liqueur,15 ml Fresh Pineapple Juice",
+    "method":"Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":"Squeeze oil from lemon peel onto the drink."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Illegal",
+    "ingredients":"30 ml Espadin Mezcal,15 ml Jamaica Overproof White Rum,15 ml Falernum,1 Bar Spoon Maraschino Luxardo,22.5 ml Fresh Lime Juice,15 ml Simple Syrup,Few Drops of Egg White (Optional)",
+    "method":"Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled cocktail glass, or “on the rocks” in a traditional clay or terracotta mug.",
+    "garnish":null
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Lemon drop Martini",
+    "ingredients":"30 ml Vodka Citron,20 ml Triple Sec,15 ml Fresh Lemon Juice",
+    "method":"Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":"Garnish with sugar rim around the glass."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Naked and Famous",
+    "ingredients":"22.5 ml Mezcal,22.5 ml Yellow Chartreuse,22.5 ml Aperol,22.5 ml Fresh Lime Juice",
+    "method":"Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"New York Sour",
+    "ingredients":"60 ml Rye Whiskey or Bourbon,22.5 ml Simple syrup,30 ml Fresh lemon juice,Few Drops of Egg White,15 ml Red wine (Shiraz or Malbech)",
+    "method":"Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled rocks glass filled with ice. Float the wine on top.",
+    "garnish":"Garnish with lemon or orange zest with cherry."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Old Cuban",
+    "ingredients":"6\/8 pcs Mint Leaves,45 ml Aged Rum,22.5 ml Fresh Lime Juice,30 ml Simple Syrup,2 Dashes Angostura Bitters,60 ml Brut Champagne or Prosecco",
+    "method":"Pour all ingredients into cocktail shaker except the wine, shake well with ice, strain into chilled elegant cocktail glass. Top up with the sparkling wine.",
+    "garnish":"Garnish with mint springs."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Paloma",
+    "ingredients":"50 ml 100% Agave Tequila,5 ml Fresh lime,A pinch of Salt,100 ml Pink Grapefruit Soda",
+    "method":"Poor the tequila into a highball glass, squeeze the lime juice. Add ice and salt, fill up pink grapefruit soda. Stir gently.",
+    "garnish":"Garnish with a slice of lime."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Paper Plane",
+    "ingredients":"30 ml Bourbon Whiskey,30 ml Amaro Nonino,30 ml Aperol,30 ml Fresh Lemon Juice",
+    "method":"Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Penicillin",
+    "ingredients":"60 ml Blended Scotch Whisky,7.5 ml Lagavulin 16 y Whisky,22.5 ml Fresh Lemon Juice,22.5 ml Honey Syrup,2-3 quarter size Sliced Fresh Ginger",
+    "method":"Muddle fresh ginger in a shaker and add the remaining ingredients, except for the Islay single malt whiskey. Fill the shaker with ice and shake. Double-strain into a chilled old fashioned glass with ice. Float the single malt whisky on top.",
+    "garnish":"Garnish with candied ginger."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Russian Spring Punch",
+    "ingredients":"25 ml Vodka,25 ml Fresh Lemon Juice,15 ml Crème de Cassis,10 ml Sugar syrup,Top up Sparkling wine",
+    "method":"Pour all ingredients into a cocktail shaker except the sparkling wine, shake well with ice, strain into a chilled tall tumbler glass filled with ice, and top up with sparkling wine.",
+    "garnish":"Garnish with blackberries and optionally a lemon slice as well."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Southside",
+    "ingredients":"60 ml London Dry Gin,30 ml Fresh Lemon Juice,15 ml Simple Syrup,5\/6 Mint Leaves,Few Drops of Egg White (Optional)",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, double-strain into chilled cocktail glass. Note: If egg white is used shake vigorously.",
+    "garnish":"Garnish with mint springs."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Spicy Fifty",
+    "ingredients":"50 ml Vodka Vanilla,15 ml Elderflower Cordial,15 ml Fresh Lime Juice,10 ml Monin Honey Syrup,2 thin Slices Red Chili Pepper",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, double-strain into chilled cocktail glass.",
+    "garnish":"Garnish with a red chili pepper"
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Spritz",
+    "ingredients":"90 ml Prosecco,60 ml Aperol,Splash of Soda water",
+    "method":"Build all ingredients into a wine glass filled with ice. Stir gently. NOTE: There are other versions of the Spritz that use Campari, Cynar or Select instead of Aperol.",
+    "garnish":"Garnish with a slice of orange."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Suffering Bastard",
+    "ingredients":"30 ml Cognac or Brandy,30 ml Gin,15 ml Fresh Lime Juice,2 Dashes Angostura Bitters,Top up Ginger beer",
+    "method":"Pour all ingredients into a cocktail shaker except the ginger beer, shake well with ice, Pour unstrained into a Collins glass or in the original S. Bastard mug and top up with ginger beer.",
+    "garnish":"Garnish with mint springs and optionally an orange slice as well."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Tipperary",
+    "ingredients":"50 ml Irish Whiskey,25 ml Sweet Red Vermouth,15 ml Green Chartreuse,2 Dashes Angostura Bitters",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "garnish":"Garnish with a slice of orange."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Tommy's Margarita",
+    "ingredients":"60 ml Tequila Agave 100% Reposado,30 ml Fresh Lime Juice (Persiano),30 ml Agave Syrup (1\/2 Water + 1\/2 Agave Nectar)",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into a chilled rocks glass filled with ice.",
+    "garnish":"Garnish with a lime slice."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Trinidad Sour",
+    "ingredients":"45 ml Angostura Bitters,30 ml Orgeat Syrup,22.5 ml Fresh Lemon Juice,15 ml Rye Whisky",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into a chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"VE.N.TO",
+    "ingredients":"45 ml White Smooth Grappa,22.5 ml Fresh lemon Juice,15 ml Honey mix (replace water with chamomile),15 ml Chamomile cordial,10 ml Egg White (Optional)",
+    "method":"Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled small tumbler glass filled with ice. Notes: If desired water can be replaced by chamomile infusion in the honey mix.",
+    "garnish":"Garnish with lemon zest and white grapes."
+  },
+  {
+    "category":"New Era Drinks",
+    "name":"Yellow Bird",
+    "ingredients":"30 ml White rum,15 ml Galliano,15 ml Triple Sec,15 ml Fresh Lime Juice",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Alexander",
+    "ingredients":"30 ml Cognac,30 ml Crème de Cacao (Brown),30 ml Fresh Cream",
+    "method":"Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
+    "garnish":"Sprinkle fresh ground nutmeg on top."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Americano",
+    "ingredients":"30 ml Bitter Campari,30 ml Sweet Red Vermouth,A splash of Soda Water",
+    "method":"Mix the ingredients directly in an old fashioned glass filled with ice cubes. Add a splash of Soda Water. Stir gently.",
+    "garnish":"Garnish with half orange slice and a lemon zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Angel Face",
+    "ingredients":"30 ml Gin,30 ml Apricot Brandy,30 ml Calvados",
+    "method":"Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Aviation",
+    "ingredients":"45 ml Gin,15 ml Maraschino Luxardo,15 ml Fresh Lemon Juice,1 Bar Spoon Crème de Violette",
+    "method":"Add all ingredients into a cocktail shaker. Shake with cracked ice and strain into a chilled cocktail glass.",
+    "garnish":"Optional Maraschino Cherry."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Between the Sheets",
+    "ingredients":"30 ml White Rum,30 ml Cognac,30 ml Triple Sec,20 ml Fresh Lemon Juice",
+    "method":"Add all ingredients into a cocktail shaker. Shake with ice and strain into a chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Boulevardier",
+    "ingredients":"45 ml Bourbon or Rye Whiskey,30 ml Bitter Campari,30 ml Sweet Red Vermouth",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into a chilled cocktail glass.",
+    "garnish":"Garnish with orange zest, optionally a lemon zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Brandy Crusta",
+    "ingredients":"52.5 ml Brandy,7.5 ml Maraschino Luxardo,1 Bar Spoon Curacao,15 ml Fresh Lemon Juice,1 Bar Spoon Simple Syrup,2 Dashes Aromatic Bitters",
+    "method":"Mix together all ingredients with ice cubes in a mixing glass and strain into prepared slim cocktail glass.",
+    "garnish":"Rub a slice of orange (or lemon) around the rim of the glass and dip it in pulverized white sugar, so that the sugar will adhere to the edge of the glass. Carefully curling place the orange\/lemon peel around the inside of the glass."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Casino",
+    "ingredients":"40 ml Old Tom Gin,10 ml Maraschino Luxardo,10 ml Fresh Lemon Juice,2 Dashes Orange Bitters",
+    "method":"Pour all ingredients into cocktails shaker, shake well with ice, strain into chilled rocks glass with ice.",
+    "garnish":"Garnish with lemon zest and a maraschino cherry."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Clover Club",
+    "ingredients":"45 ml Gin,15 ml Raspberry Syrup,15 ml Fresh Lemon Juice,Few Drops of Egg White",
+    "method":"Pour all ingredients into cocktails shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":"Fresh raspberries."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Daiquiri",
+    "ingredients":"60 ml White Cuban Ron,20 ml Fresh Lime Juice,2 Bar Spoons Superfine Sugar",
+    "method":"In a cocktail shaker add all ingredients. Stir well to dissolve the sugar. Add ice and shake. Strain into chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Dry Martini",
+    "ingredients":"60 ml Gin,10 ml Dry Vermouth",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "garnish":"Squeeze oil from lemon peel onto the drink, or garnish with green olives if requested."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Gin Fizz",
+    "ingredients":"45 ml Gin,30 ml Fresh Lemon Juice,10 ml Simple Syrup,Splash of Soda Water",
+    "method":"Shake all ingredients with ice except soda water. Pour into thin tall Tumbler glass , top with a splash soda water.  NOTE: Serve without ice.",
+    "garnish":"Garnish with a lemon slice, optional lemon zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Hanky Panky",
+    "ingredients":"45 ml London Dry Gin,45 ml Sweet Red Vermouth,7.5 ml Fernet Branca",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled cocktail glass.",
+    "garnish":"Orange zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"John Collins",
+    "ingredients":"45 ml Gin,30 ml Fresh Lemon Juice,15 ml Simple Syrup,60 ml Soda Water",
+    "method":"Pour all ingredients directly into a highball filled with ice. Stir gently. NOTE: Use ‘Old Tom' Gin for Tom Collins.",
+    "garnish":"Garnish with a lemon slice and maraschino cherry."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Last word",
+    "ingredients":"22.5 ml Gin,22.5 ml Green Chartreuse,22.5 ml Maraschino Luxardo,22.5 ml Fresh Lime Juice",
+    "method":"Add all ingredients into a cocktail shaker. Shake with ice and strain into a chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Manhattan",
+    "ingredients":"50 ml Rye Whiskey,20 ml Sweet Red Vermouth,1 dash Angostura Bitters",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into a chilled cocktail glass.",
+    "garnish":"Garnish with a cocktail cherry."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Martinez",
+    "ingredients":"45 ml London Dry Gin,45 ml Sweet Red Vermouth,1 Bar Spoon Maraschino Liqueur,2 Dashes Orange Bitters",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into a chilled cocktail glass.",
+    "garnish":"Lemon zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Mary Pickford",
+    "ingredients":"45 ml White Rum,45 ml Fresh Pineapple Juice,7.5 ml Maraschino Luxardo,5 ml Grenadine Syrup",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into a chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Monkey Gland",
+    "ingredients":"45 ml Dry Gin,45 ml Fresh Orange Juice,1 Table Spoon Absinthe,1 Table Spoon Grenadine Syrup",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into a chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Negroni",
+    "ingredients":"30 ml Gin,30 ml Bitter Campari,30 ml Sweet Red Vermouth",
+    "method":"Pour all ingredients directly into a chilled old fashioned glass filled with ice, Stir gently.",
+    "garnish":"Garnish with a half orange slice."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Old Fashioned",
+    "ingredients":"45 ml Bourbon or Rye Whiskey,1 Sugar Cube,Few Dashes Angostura Bitters,Few Dashes Plain Water",
+    "method":"Place sugar cube in old fashioned glass and saturate with bitter, add few dashes of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Stir gently.",
+    "garnish":"Garnish with an orange slice or zest, and a cocktail cherry."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Paradise",
+    "ingredients":"30 ml Gin,20 ml Apricot Brandy,15 ml Fresh Orange Juice",
+    "method":"Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Planter's Punch",
+    "ingredients":"45 ml Jamaican Rum,15 ml Lime Juice,30 ml Sugar Cane Juice",
+    "method":"Pour all ingredients directly in a small tumbler or a typical terracotta glass. NOTE: Add dilution up to taste, it can be given by water, ice or fresh juices.",
+    "garnish":"Garnish with orange zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Porto Flip",
+    "ingredients":"15 ml Brandy,45 ml Red Tawny Port Wine,10 ml Egg Yolk",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into a chilled cocktail glass.",
+    "garnish":"Sprinkle with fresh ground nutmeg."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Ramos Fizz",
+    "ingredients":"45 ml Gin,15 ml Fresh Lime Juice,15 ml Fresh Lemon Juice,30 ml Sugar Syrup,60 ml Cream,30 ml Egg white,3 Dashes Orange Flower Water,2 Drops Vanilla Extract,Soda Water",
+    "method":"Pour all ingredients except soda water in a cocktail shaker with ice, Shake for two minutes, double strain in a glass, pour the drink back in the shaker, and hard shake without ice for one minute. Strain into a highball glass, top up with soda. NOTE: The drink was invented by Henry Ramos in 1888, at his bar Meyer's Table d'Hôtel Internationale in New Orleans. The Ramos Fizz was originally shaken for 12 minutes by a crew of 30 bartenders who passed the shaker from one to another.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Rusty Nail",
+    "ingredients":"45 ml Scotch Whisky,25 ml Drambuie",
+    "method":"Pour all ingredients directly into an old fashioned glass filled with ice. Stir gently.",
+    "garnish":"Garnish with lemon zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Sazerac",
+    "ingredients":"50 ml Cognac,10 ml Absinthe,1 Sugar Cube,2 Dashes Peychaud's Bitters",
+    "method":"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. Stir the remaining ingredients over ice in a mixing glass. Discard the ice and any excess absinthe from the prepared glass, strain the mixed drink into the glass.  NOTE: The original recipe changed after the American Civil War, Rye Whiskey substituted Cognac as it became hard to obtain.",
+    "garnish":"Garnish with lemon zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Sidecar",
+    "ingredients":"50 ml Cognac,20 ml Triple Sec,20 ml Fresh Lemon Juice",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into a chilled cocktail glass.",
+    "garnish":null
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Stinger",
+    "ingredients":"50 ml Cognac,20 ml White Crème de Menthe",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "garnish":"Optional mint leave."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Tuxedo",
+    "ingredients":"30 ml Old Tom Gin,30 ml Dry Vermouth,1\/2 Bar Spoon Maraschino Luxardo,1\/4 Bar Spoon of Absinthe,3 Dashes Orange Bitters",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "garnish":"Garnish with cherry and lemon zest"
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Vieux Carrè",
+    "ingredients":"30 ml Rye Whiskey,30 ml Cognac,30 ml Sweet Vermouth,1 Bar Spoon Bénédictine,2 Dashes Peychaud's Bitters",
+    "method":"Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into a chilled cocktail glass.",
+    "garnish":"Garnish with orange zest and maraschino cherry."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"Whiskey Sour",
+    "ingredients":"45 ml Bourbon Whiskey,25 ml Fresh Lemon Juice,20 ml Sugar Syrup,20 ml Egg White (Optional)",
+    "method":"Pour all ingredients into a cocktail shaker filled with ice. Shake well. Strain into cobbler glass. If served “On the rocks”, strain ingredients into an old fashioned glass filled with ice.  NOTE: If egg white is used shake little harder to release and incorporate the foam from the egg white.",
+    "garnish":"Garnish with a half orange slice and maraschino cherry, optionally use orange zest."
+  },
+  {
+    "category":"The Unforgettables",
+    "name":"White Lady",
+    "ingredients":"40 ml Gin,30 ml Triple Sec,20 ml Fresh Lemon Juice",
+    "method":"Pour all ingredients into a cocktail shaker, shake well with ice, strain into a chilled cocktail glass.",
+    "garnish":null
+  }
+]

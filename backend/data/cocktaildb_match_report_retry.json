@@ -1,0 +1,258 @@
+[
+  {
+    "name_en": "Champagne Cocktail",
+    "search_query": "Champagne Cocktail",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Champagne Cocktail",
+    "cocktaildb_id": "11227",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Corpse Reviver #2",
+    "search_query": "Corpse Reviver",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Corpse Reviver",
+    "cocktaildb_id": "17250",
+    "match_score": 0.933
+  },
+  {
+    "name_en": "Grasshopper",
+    "search_query": "Grasshopper",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Grasshopper",
+    "cocktaildb_id": "17200",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Horse's Neck",
+    "search_query": "Horse Neck",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Long Island Ice Tea",
+    "search_query": "Long Island Iced Tea",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Long Island Iced Tea",
+    "cocktaildb_id": "17204",
+    "match_score": 0.974
+  },
+  {
+    "name_en": "Mai-Tai",
+    "search_query": "Mai Tai",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Mai Tai",
+    "cocktaildb_id": "11690",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Moscow Mule",
+    "search_query": "Moscow Mule",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Moscow Mule",
+    "cocktaildb_id": "11009",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Vesper",
+    "search_query": "Vesper",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Vesper",
+    "cocktaildb_id": "17218",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Bee's Knees",
+    "search_query": "Bees Knees",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Canchanchara",
+    "search_query": "Canchanchara",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Dark ‘n' stormy",
+    "search_query": "Dark and Stormy",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Dark and Stormy",
+    "cocktaildb_id": "17211",
+    "match_score": 0.897
+  },
+  {
+    "name_en": "Espresso Martini",
+    "search_query": "Espresso Martini",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Espresso Martini",
+    "cocktaildb_id": "17212",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Fernandito",
+    "search_query": "Fernandito",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Illegal",
+    "search_query": "Illegal",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Lemon drop Martini",
+    "search_query": "Lemon Drop",
+    "status": "manual_review",
+    "cocktaildb_name": "Lemon Drop",
+    "cocktaildb_id": "14366",
+    "match_score": 0.714
+  },
+  {
+    "name_en": "Naked and Famous",
+    "search_query": "Naked and Famous",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Old Cuban",
+    "search_query": "Old Cuban",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Old Cuban",
+    "cocktaildb_id": "178371",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Paper Plane",
+    "search_query": "Paper Plane",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Southside",
+    "search_query": "Southside",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Spicy Fifty",
+    "search_query": "Spicy Fifty",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Spritz",
+    "search_query": "Aperol Spritz",
+    "status": "manual_review",
+    "cocktaildb_name": "Aperol Spritz",
+    "cocktaildb_id": "178325",
+    "match_score": 0.632
+  },
+  {
+    "name_en": "Suffering Bastard",
+    "search_query": "Suffering Bastard",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Tommy's Margarita",
+    "search_query": "Tommy Margarita",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Trinidad Sour",
+    "search_query": "Trinidad Sour",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "VE.N.TO",
+    "search_query": "Vento",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Alexander",
+    "search_query": "Alexander",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Alexander",
+    "cocktaildb_id": "11014",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Boulevardier",
+    "search_query": "Boulevardier",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Boulevardier",
+    "cocktaildb_id": "17251",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Brandy Crusta",
+    "search_query": "Brandy Crusta",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Gin Fizz",
+    "search_query": "Gin Fizz",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Gin Fizz",
+    "cocktaildb_id": "11410",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Hanky Panky",
+    "search_query": "Hanky Panky",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Mary Pickford",
+    "search_query": "Mary Pickford",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Mary Pickford",
+    "cocktaildb_id": "17188",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Planter's Punch",
+    "search_query": "Planters Punch",
+    "status": "manual_review",
+    "cocktaildb_name": "Mississippi Planters Punch",
+    "cocktaildb_id": "11786",
+    "match_score": 0.7
+  },
+  {
+    "name_en": "Ramos Fizz",
+    "search_query": "Ramos Gin Fizz",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Ramos Gin Fizz",
+    "cocktaildb_id": "178367",
+    "match_score": 0.833
+  },
+  {
+    "name_en": "Tuxedo",
+    "search_query": "Tuxedo",
+    "status": "manual_review",
+    "cocktaildb_name": "Tuxedo Cocktail",
+    "cocktaildb_id": "12420",
+    "match_score": 0.571
+  },
+  {
+    "name_en": "Vieux Carrè",
+    "search_query": "Vieux Carre",
+    "status": "not_found_after_retry",
+    "match_score": 0.0
+  },
+  {
+    "name_en": "Whiskey Sour",
+    "search_query": "Whiskey Sour",
+    "status": "matched_after_retry",
+    "cocktaildb_name": "Whiskey Sour",
+    "cocktaildb_id": "11004",
+    "match_score": 1.0
+  }
+]

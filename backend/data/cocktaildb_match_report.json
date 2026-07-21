@@ -1,0 +1,560 @@
+[
+  {
+    "name_en": "Bellini",
+    "status": "matched",
+    "cocktaildb_name": "Bellini",
+    "cocktaildb_id": "17195",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Black Russian",
+    "status": "matched",
+    "cocktaildb_name": "Black Russian",
+    "cocktaildb_id": "11102",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Bloody Mary",
+    "status": "matched",
+    "cocktaildb_name": "Bloody Mary",
+    "cocktaildb_id": "11113",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Caipirinha",
+    "status": "matched",
+    "cocktaildb_name": "Caipirinha",
+    "cocktaildb_id": "11202",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Champagne Cocktail",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "name_en": "Corpse Reviver #2",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Cosmopolitan",
+    "status": "matched",
+    "cocktaildb_name": "Cosmopolitan",
+    "cocktaildb_id": "17196",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Cuba Libre",
+    "status": "matched",
+    "cocktaildb_name": "Cuba Libre",
+    "cocktaildb_id": "11288",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "French 75",
+    "status": "matched",
+    "cocktaildb_name": "French 75",
+    "cocktaildb_id": "17197",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "French Connection",
+    "status": "matched",
+    "cocktaildb_name": "French Connection",
+    "cocktaildb_id": "17198",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Golden Dream",
+    "status": "matched",
+    "cocktaildb_name": "Golden dream",
+    "cocktaildb_id": "17199",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Grasshopper",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "name_en": "Hemingway Special",
+    "status": "matched",
+    "cocktaildb_name": "Hemingway Special",
+    "cocktaildb_id": "17201",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Horse's Neck",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Irish Coffee",
+    "status": "matched",
+    "cocktaildb_name": "Irish Coffee",
+    "cocktaildb_id": "13971",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "KIR",
+    "status": "matched",
+    "cocktaildb_name": "Kir",
+    "cocktaildb_id": "17203",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Long Island Ice Tea",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Mai-Tai",
+    "status": "request_error",
+    "error": "('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))"
+  },
+  {
+    "name_en": "Margarita",
+    "status": "matched",
+    "cocktaildb_name": "Margarita",
+    "cocktaildb_id": "11007",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Mimosa",
+    "status": "matched",
+    "cocktaildb_name": "Mimosa",
+    "cocktaildb_id": "17205",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Mint Julep",
+    "status": "matched",
+    "cocktaildb_name": "Mint Julep",
+    "cocktaildb_id": "17206",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Mojito",
+    "status": "matched",
+    "cocktaildb_name": "Mojito",
+    "cocktaildb_id": "11000",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Moscow Mule",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "name_en": "Pina Colada",
+    "status": "matched",
+    "cocktaildb_name": "Pina Colada",
+    "cocktaildb_id": "17207",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Pisco Sour",
+    "status": "matched",
+    "cocktaildb_name": "Pisco Sour",
+    "cocktaildb_id": "13214",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Sea Breeze",
+    "status": "matched",
+    "cocktaildb_name": "Sea breeze",
+    "cocktaildb_id": "13377",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Sex on the Beach",
+    "status": "matched",
+    "cocktaildb_name": "Sex on the Beach",
+    "cocktaildb_id": "12754",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Singapore Sling",
+    "status": "matched",
+    "cocktaildb_name": "Singapore Sling",
+    "cocktaildb_id": "12214",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Tequila Sunrise",
+    "status": "matched",
+    "cocktaildb_name": "Tequila Sunrise",
+    "cocktaildb_id": "13621",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Vesper",
+    "status": "request_error",
+    "error": "('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))"
+  },
+  {
+    "name_en": "Zombie",
+    "status": "matched",
+    "cocktaildb_name": "Zombie",
+    "cocktaildb_id": "17241",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Barracuda",
+    "status": "matched",
+    "cocktaildb_name": "Barracuda",
+    "cocktaildb_id": "17209",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Bee's Knees",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Bramble",
+    "status": "matched",
+    "cocktaildb_name": "Bramble",
+    "cocktaildb_id": "17210",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Canchanchara",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Dark ‘n' stormy",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Espresso Martini",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out."
+  },
+  {
+    "name_en": "Fernandito",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "French Martini",
+    "status": "matched",
+    "cocktaildb_name": "French Martini",
+    "cocktaildb_id": "17213",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Illegal",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Lemon drop Martini",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Naked and Famous",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "New York Sour",
+    "status": "matched",
+    "cocktaildb_name": "New York Sour",
+    "cocktaildb_id": "11844",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Old Cuban",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out."
+  },
+  {
+    "name_en": "Paloma",
+    "status": "matched",
+    "cocktaildb_name": "Paloma",
+    "cocktaildb_id": "17253",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Paper Plane",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Penicillin",
+    "status": "matched",
+    "cocktaildb_name": "Penicillin",
+    "cocktaildb_id": "17829",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Russian Spring Punch",
+    "status": "matched",
+    "cocktaildb_name": "Russian Spring Punch",
+    "cocktaildb_id": "17214",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Southside",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Spicy Fifty",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Spritz",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+    "name_en": "Suffering Bastard",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Tipperary",
+    "status": "matched",
+    "cocktaildb_name": "Tipperary",
+    "cocktaildb_id": "17828",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Tommy's Margarita",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Trinidad Sour",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "VE.N.TO",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Yellow Bird",
+    "status": "matched",
+    "cocktaildb_name": "Yellow Bird",
+    "cocktaildb_id": "17219",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Alexander",
+    "status": "request_error",
+    "error": "('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))"
+  },
+  {
+    "name_en": "Americano",
+    "status": "matched",
+    "cocktaildb_name": "Americano",
+    "cocktaildb_id": "15941",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Angel Face",
+    "status": "matched",
+    "cocktaildb_name": "Angel Face",
+    "cocktaildb_id": "11034",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Aviation",
+    "status": "matched",
+    "cocktaildb_name": "Aviation",
+    "cocktaildb_id": "17180",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Between the Sheets",
+    "status": "matched",
+    "cocktaildb_name": "Between The Sheets",
+    "cocktaildb_id": "17184",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Boulevardier",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out."
+  },
+  {
+    "name_en": "Brandy Crusta",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Casino",
+    "status": "matched",
+    "cocktaildb_name": "Casino",
+    "cocktaildb_id": "17185",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Clover Club",
+    "status": "matched",
+    "cocktaildb_name": "Clover Club",
+    "cocktaildb_id": "17186",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Daiquiri",
+    "status": "matched",
+    "cocktaildb_name": "Daiquiri",
+    "cocktaildb_id": "11006",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Dry Martini",
+    "status": "matched",
+    "cocktaildb_name": "Dry Martini",
+    "cocktaildb_id": "11005",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Gin Fizz",
+    "status": "request_error",
+    "error": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Read timed out."
+  },
+  {
+    "name_en": "Hanky Panky",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "John Collins",
+    "status": "matched",
+    "cocktaildb_name": "John Collins",
+    "cocktaildb_id": "11580",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Last word",
+    "status": "matched",
+    "cocktaildb_name": "The Last Word",
+    "cocktaildb_id": "17247",
+    "match_score": 0.818
+  },
+  {
+    "name_en": "Manhattan",
+    "status": "matched",
+    "cocktaildb_name": "Manhattan",
+    "cocktaildb_id": "11008",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Martinez",
+    "status": "matched",
+    "cocktaildb_name": "Martinez 2",
+    "cocktaildb_id": "17256",
+    "match_score": 0.889
+  },
+  {
+    "name_en": "Mary Pickford",
+    "status": "request_error",
+    "error": "('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))"
+  },
+  {
+    "name_en": "Monkey Gland",
+    "status": "matched",
+    "cocktaildb_name": "Monkey Gland",
+    "cocktaildb_id": "17189",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Negroni",
+    "status": "matched",
+    "cocktaildb_name": "Negroni",
+    "cocktaildb_id": "11003",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Old Fashioned",
+    "status": "matched",
+    "cocktaildb_name": "Old Fashioned",
+    "cocktaildb_id": "11001",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Paradise",
+    "status": "matched",
+    "cocktaildb_name": "Paradise",
+    "cocktaildb_id": "17190",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Planter's Punch",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Porto Flip",
+    "status": "matched",
+    "cocktaildb_name": "Porto flip",
+    "cocktaildb_id": "17192",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Ramos Fizz",
+    "status": "request_error",
+    "error": "('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))"
+  },
+  {
+    "name_en": "Rusty Nail",
+    "status": "matched",
+    "cocktaildb_name": "Rusty Nail",
+    "cocktaildb_id": "12101",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Sazerac",
+    "status": "matched",
+    "cocktaildb_name": "Sazerac",
+    "cocktaildb_id": "12127",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Sidecar",
+    "status": "matched",
+    "cocktaildb_name": "Sidecar",
+    "cocktaildb_id": "12196",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Stinger",
+    "status": "matched",
+    "cocktaildb_name": "Stinger",
+    "cocktaildb_id": "17193",
+    "match_score": 1.0
+  },
+  {
+    "name_en": "Tuxedo",
+    "status": "not_found",
+    "best_score": 0.571
+  },
+  {
+    "name_en": "Vieux Carrè",
+    "status": "not_found",
+    "best_score": 0.0
+  },
+  {
+    "name_en": "Whiskey Sour",
+    "status": "request_error",
+    "error": "('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))"
+  },
+  {
+    "name_en": "White Lady",
+    "status": "matched",
+    "cocktaildb_name": "White Lady",
+    "cocktaildb_id": "17194",
+    "match_score": 1.0
+  }
+]

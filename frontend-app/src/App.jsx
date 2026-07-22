@@ -645,13 +645,21 @@ function App() {
               <h3>Ингредиенты</h3>
 
               <ul className="ingredients-list">
-                {cocktail.ingredients.map((ingredient) => (
-                  <li key={ingredient.name}>
-                    {ingredient.amount && `${ingredient.amount} `}
-                    {ingredient.unit && `${ingredient.unit} `}
-                    {ingredient.name}
-                  </li>
-                ))}
+                {selectedCocktail.ingredients.map((ingredient, index) => {
+                  if (typeof ingredient === "string") {
+                    return <li key={`${ingredient}-${index}`}>{ingredient}</li>;
+                  }
+
+                  const name = ingredient.name || ingredient.ingredient || "Ингредиент";
+                  const amount = ingredient.amount || ingredient.quantity || "";
+                  const unit = ingredient.unit || "";
+
+                  return (
+                    <li key={`${name}-${index}`}>
+                      {[amount, unit, name].filter(Boolean).join(" ")}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 

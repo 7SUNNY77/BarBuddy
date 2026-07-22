@@ -392,23 +392,16 @@ function App() {
   }
 
   async function createOrder() {
-    console.log("Нажали Заказать", selectedCocktail);
-    if (response.status === 429) {
-      throw new Error(
-        "Слишком много заявок. Попробуйте позже."
-      );
-    }
-
     if (!selectedCocktail) {
+      setOrderMessage("Не удалось определить выбранный коктейль.");
+      setOrderSuccess(false);
       return;
     }
 
     try {
       setOrderLoading(true);
       setOrderMessage("");
-
-      const initData =
-        window.Telegram?.WebApp?.initData || "";
+      setOrderSuccess(false);
 
       const response = await fetch(`${API_URL}/orders`, {
         method: "POST",
@@ -417,11 +410,17 @@ function App() {
         },
         body: JSON.stringify({
           cocktail_id: selectedCocktail.id,
-          init_data: initData,
+          init_data: window.Telegram?.WebApp?.initData || "",
         }),
       });
 
       const data = await response.json();
+
+      if (response.status === 429) {
+        throw new Error(
+          "Слишком много запросов. Подождите 10 секунд и попробуйте снова."
+        );
+      }
 
       if (!response.ok) {
         throw new Error(
@@ -429,11 +428,16 @@ function App() {
         );
       }
 
-      setOrderMessage(data.message);
-    } catch (requestError) {
-      console.error(requestError);
+      setOrderSuccess(true);
       setOrderMessage(
-        "Не удалось отправить заявку. Попробуйте ещё раз."
+        "Заявка отправлена — если бар работает и хватает ингредиентов, то приготовим."
+      );
+    } catch (error) {
+      console.error("Order error:", error);
+
+      setOrderSuccess(false);
+      setOrderMessage(
+        error.message || "Не удалось отправить заявку. Попробуйте ещё раз."
       );
     } finally {
       setOrderLoading(false);
@@ -881,14 +885,16 @@ function App() {
             </div>
             <div className="order-section">
               <button
-                className="order-button"
+                className={`order-button ${
+                  orderSuccess ? "is-success" : ""
+                }`}
                 type="button"
-                onClick={createOrder}
+                onClick={() => createOrder()}
                 disabled={orderLoading}
               >
                 {orderLoading
                   ? "Отправляем..."
-                  : orderMessage
+                  : orderSuccess
                     ? "Заявка отправлена ✓"
                     : "Заказать"}
               </button>

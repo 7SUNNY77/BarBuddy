@@ -380,6 +380,7 @@ function App() {
       }
 
       const cocktail = await response.json();
+      setOrderMessage("");
       setSelectedCocktail(cocktail);
     } catch (requestError) {
       console.error(requestError);

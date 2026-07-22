@@ -229,10 +229,28 @@ def rank_cocktails(
         reverse=True,
     )
 
-    return [
-        item["cocktail"]
-        for item in ranked[:3]
-    ]
+    unique_cocktails = []
+    seen_names = set()
+
+    for item in ranked:
+        cocktail = item["cocktail"]
+
+        unique_key = (
+            cocktail.get("name_en")
+            or cocktail.get("name_ru")
+            or cocktail.get("id")
+        ).strip().lower()
+
+        if unique_key in seen_names:
+            continue
+
+        seen_names.add(unique_key)
+        unique_cocktails.append(cocktail)
+
+        if len(unique_cocktails) == 3:
+            break
+
+    return unique_cocktails
 
 
 @router.get("")

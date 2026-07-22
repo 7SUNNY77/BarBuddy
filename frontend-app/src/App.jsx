@@ -114,6 +114,54 @@ function getCocktailCover(tasteTags = []) {
   return "cover-classic";
 }
 
+const INGREDIENT_TRANSLATIONS = {
+  Vodka: "Водка",
+  "Coffee Liqueur": "Кофейный ликёр",
+  "White Rum": "Белый ром",
+  Rum: "Ром",
+  Gin: "Джин",
+  Tequila: "Текила",
+  Cognac: "Коньяк",
+  Prosecco: "Просекко",
+  Champagne: "Шампанское",
+  "Fresh Lime Juice": "Свежевыжатый сок лайма",
+  "Fresh Lemon Juice": "Свежевыжатый лимонный сок",
+  "Fresh Orange Juice": "Свежевыжатый апельсиновый сок",
+  "Cranberry Juice": "Клюквенный сок",
+  "Grapefruit Juice": "Грейпфрутовый сок",
+  "Tomato Juice": "Томатный сок",
+  "Coffee Liqueur": "Кофейный ликёр",
+  "Sugar Syrup": "Сахарный сироп",
+  "Simple Syrup": "Сахарный сироп",
+  "Soda Water": "Содовая",
+  "Coca Cola": "Кока-кола",
+  Cola: "Кола",
+  "Ginger Beer": "Имбирное пиво",
+  "Ginger Ale": "Имбирный эль",
+  "White Cane Sugar": "Белый тростниковый сахар",
+  "Lime cut into small wedges": "Лайм, нарезанный дольками",
+  "Cachaça": "Кашаса",
+  "Coconut Cream": "Кокосовые сливки",
+  "Fresh Pineapple Juice": "Свежевыжатый ананасовый сок",
+  "Mint Leaves": "Листья мяты",
+  "Mint Sprigs": "Веточки мяты",
+  "Angostura Bitters": "Биттер Ангостура",
+  "Triple Sec": "Трипл-сек",
+  Cointreau: "Куантро",
+  Kahlúa: "Калуа",
+  Campari: "Кампари",
+  Aperol: "Апероль",
+  Absinthe: "Абсент",
+  "Dry Vermouth": "Сухой вермут",
+  "Sweet Red Vermouth": "Сладкий красный вермут",
+  "Bourbon Whisky": "Бурбон",
+  "Irish Whiskey": "Ирландский виски",
+  "Scotch Whisky": "Шотландский виски",
+  "Egg White": "Яичный белок",
+  "Fresh Cream": "Сливки",
+  Cream: "Сливки",
+};
+
 function App() {
   const [cocktails, setCocktails] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -650,7 +698,11 @@ function App() {
                     return <li key={`${ingredient}-${index}`}>{ingredient}</li>;
                   }
 
-                  const name = ingredient.name || ingredient.ingredient || "Ингредиент";
+                  const originalName =
+                    ingredient.name || ingredient.ingredient || "Ингредиент";
+
+                  const name =
+                    INGREDIENT_TRANSLATIONS[originalName] || originalName;
                   const amount = ingredient.amount || ingredient.quantity || "";
                   const unit = ingredient.unit || "";
 

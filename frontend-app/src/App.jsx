@@ -287,7 +287,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [detailsLoading, setDetailsLoading] = useState(false);
   const [error, setError] = useState("");
-
+  const [orderLoading, setOrderLoading] = useState(false);
+  const [orderMessage, setOrderMessage] = useState("");
   const telegramUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
   const userName = telegramUser?.first_name;
 
@@ -385,6 +386,48 @@ function App() {
       setError("Не удалось загрузить рецепт.");
     } finally {
       setDetailsLoading(false);
+    }
+  }
+
+  async function createOrder() {
+    if (!selectedCocktail) {
+      return;
+    }
+
+    try {
+      setOrderLoading(true);
+      setOrderMessage("");
+
+      const initData =
+        window.Telegram?.WebApp?.initData || "";
+
+      const response = await fetch(`${API_URL}/orders`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          cocktail_id: selectedCocktail.id,
+          init_data: initData,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.detail || "Не удалось отправить заявку."
+        );
+      }
+
+      setOrderMessage(data.message);
+    } catch (requestError) {
+      console.error(requestError);
+      setOrderMessage(
+        "Не удалось отправить заявку. Попробуйте ещё раз."
+      );
+    } finally {
+      setOrderLoading(false);
     }
   }
 
@@ -812,6 +855,26 @@ function App() {
                   selectedCocktail.instructions_en ||
                   "Инструкция пока не добавлена."}
               </p>
+            </div>
+            <div className="order-section">
+              <button
+                className="order-button"
+                type="button"
+                onClick={createOrder}
+                disabled={orderLoading || Boolean(orderMessage)}
+              >
+                {orderLoading
+                  ? "Отправляем..."
+                  : orderMessage
+                    ? "Заявка отправлена ✓"
+                    : "Заказать"}
+              </button>
+
+              {orderMessage && (
+                <p className="order-message">
+                  {orderMessage}
+                </p>
+              )}
             </div>
           </section>
         </div>

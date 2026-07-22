@@ -3,15 +3,24 @@ from pathlib import Path
 from app.ingredient_translations import INGREDIENT_TRANSLATIONS
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
-
+from app.services.telegram_orders import (
+    get_telegram_user,
+    send_order_notification,
+)
 from app.services.ai_recommendations import parse_cocktail_query
 router = APIRouter(
     prefix="/api/cocktails",
     tags=["Cocktails"],
 )
 
+
+
 class RecommendationRequest(BaseModel):
     query: str = Field(min_length=3, max_length=300)
+
+class OrderRequest(BaseModel):
+    cocktail_id: str = Field(min_length=1, max_length=100)
+    init_data: str = Field(default="", max_length=4096)
 
 DATA_PATH = (
     Path(__file__).resolve().parents[2]
@@ -349,4 +358,47 @@ def get_ai_recommendations(payload: RecommendationRequest):
             to_catalog_card(cocktail)
             for cocktail in recommendations
         ],
+    }
+
+@router.post("/orders")
+def create_order(payload: OrderRequest) -> dict:
+    cocktails = load_cocktails()
+
+    cocktail = next(
+        (
+            item
+            for item in cocktails
+            if item["id"] == payload.cocktail_id
+        ),
+        None,
+    )
+
+    if cocktail is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Коктейль не найден",
+        )
+
+    try:
+        telegram_user = get_telegram_user(payload.init_data)
+
+        send_order_notification(
+            cocktail=cocktail,
+            telegram_user=telegram_user,
+        )
+    except HTTPException:
+        raise
+    except Exception as error:
+        print(f"Order notification error: {error}")
+
+        raise HTTPException(
+            status_code=503,
+            detail="Не удалось отправить заявку",
+        )
+
+    return {
+        "message": (
+            "Заявка отправлена — если бар работает и хватает "
+            "ингредиентов, то приготовим."
+        )
     }

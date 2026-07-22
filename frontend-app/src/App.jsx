@@ -289,6 +289,7 @@ function App() {
   const [error, setError] = useState("");
   const [orderLoading, setOrderLoading] = useState(false);
   const [orderMessage, setOrderMessage] = useState("");
+  const [orderSuccess, setOrderSuccess] = useState(false);
   const telegramUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
   const userName = telegramUser?.first_name;
 

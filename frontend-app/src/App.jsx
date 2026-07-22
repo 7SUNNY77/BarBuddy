@@ -391,6 +391,13 @@ function App() {
   }
 
   async function createOrder() {
+    
+    if (response.status === 429) {
+      throw new Error(
+        "Слишком много заявок. Попробуйте позже."
+      );
+    }
+
     if (!selectedCocktail) {
       return;
     }
@@ -454,6 +461,12 @@ function App() {
         },
         body: JSON.stringify({ query }),
       });
+
+      if (response.status === 429) {
+        throw new Error(
+          "Слишком много запросов. Подождите минуту и попробуйте снова."
+        );
+      }
 
       if (!response.ok) {
         throw new Error(`Ошибка AI-подбора: ${response.status}`);

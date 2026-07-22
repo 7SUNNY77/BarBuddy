@@ -4,11 +4,22 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes_cocktails import router as cocktails_router
 from app.api.routes_meta import router as meta_router
 
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
+from app.limiter import limiter
+
 app = FastAPI(
     title="BarBuddy API",
     description="API для каталога и рекомендаций коктейлей BarBuddy",
     version="0.2.0",
 )
+
+app.state.limiter = limiter
+app.add_exception_handler(
+    RateLimitExceeded,
+    _rate_limit_exceeded_handler,
+)
+app.add_middleware(SlowAPIMiddleware)
 
 app.add_middleware(
     CORSMiddleware,

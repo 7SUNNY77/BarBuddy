@@ -7,7 +7,11 @@ from app.services.telegram_orders import (
     get_telegram_user,
     send_order_notification,
 )
+from fastapi import APIRouter, HTTPException, Query, Request
+from app.main import limiter
 from app.services.ai_recommendations import parse_cocktail_query
+from app.limiter import limiter
+
 router = APIRouter(
     prefix="/api/cocktails",
     tags=["Cocktails"],
@@ -333,7 +337,11 @@ def get_cocktail(cocktail_id: str) -> dict:
     return cocktail
 
 @router.post("/recommendations")
-def get_ai_recommendations(payload: RecommendationRequest):
+@limiter.limit("1/7seconds")
+def get_ai_recommendations(
+    request: Request,
+    payload: RecommendationRequest,
+):
     try:
         preferences = parse_cocktail_query(payload.query)
     except Exception:
@@ -361,7 +369,11 @@ def get_ai_recommendations(payload: RecommendationRequest):
     }
 
 @router.post("/orders")
-def create_order(payload: OrderRequest) -> dict:
+@limiter.limit("1/7seconds")
+def create_order(
+    request: Request,
+    payload: OrderRequest,
+) -> dict:
     cocktails = load_cocktails()
 
     cocktail = next(

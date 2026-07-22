@@ -180,11 +180,18 @@ def rank_cocktails(
         tags = get_cocktail_tags(cocktail)
         searchable_text = get_cocktail_text(cocktail)
 
+        for group in preferences.include_ingredients:
+            if has_ingredient_group(ingredient_names, group):
+                score += 4
+
+        matched_taste_tags = 0
+
         for wanted_tag in preferences.taste_tags:
             wanted_tag = wanted_tag.lower()
 
             if wanted_tag in tags:
                 score += 6
+                matched_taste_tags += 1
 
             if wanted_tag in searchable_text:
                 score += 2
@@ -197,6 +204,18 @@ def rank_cocktails(
             score += 2
         elif preferences.strength != "any":
             score -= 2
+
+        # Если пользователь явно указал вкус — коктейль обязан
+        # совпасть хотя бы с одним вкусовым тегом.
+        if preferences.taste_tags and matched_taste_tags == 0:
+            continue
+
+        ranked.append(
+            {
+                "cocktail": cocktail,
+                "score": score,
+            }
+        )
 
         ranked.append(
             {

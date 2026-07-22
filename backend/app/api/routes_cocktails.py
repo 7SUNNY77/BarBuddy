@@ -8,7 +8,6 @@ from app.services.telegram_orders import (
     send_order_notification,
 )
 from fastapi import APIRouter, HTTPException, Query, Request
-from app.main import limiter
 from app.services.ai_recommendations import parse_cocktail_query
 from app.limiter import limiter
 

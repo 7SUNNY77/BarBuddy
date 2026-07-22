@@ -382,6 +382,7 @@ function App() {
       const cocktail = await response.json();
       setOrderMessage("");
       setSelectedCocktail(cocktail);
+
     } catch (requestError) {
       console.error(requestError);
       setError("Не удалось загрузить рецепт.");
@@ -391,7 +392,7 @@ function App() {
   }
 
   async function createOrder() {
-    
+
     if (response.status === 429) {
       throw new Error(
         "Слишком много заявок. Попробуйте позже."
@@ -762,7 +763,11 @@ function App() {
       {selectedCocktail && (
         <div
           className="modal-backdrop"
-          onClick={() => setSelectedCocktail(null)}
+          onClick={() => {
+            setSelectedCocktail(null);
+            setOrderMessage("");
+            setOrderSuccess(false);
+          }}
         >
           <section
             className="cocktail-modal"
@@ -774,7 +779,11 @@ function App() {
             <button
               className="modal-close"
               type="button"
-              onClick={() => setSelectedCocktail(null)}
+              onClick={() => {
+                setSelectedCocktail(null);
+                setOrderMessage("");
+                setOrderSuccess(false);
+              }}
               aria-label="Закрыть"
             >
               ×
@@ -875,7 +884,7 @@ function App() {
                 className="order-button"
                 type="button"
                 onClick={createOrder}
-                disabled={orderLoading || Boolean(orderMessage)}
+                disabled={orderLoading}
               >
                 {orderLoading
                   ? "Отправляем..."

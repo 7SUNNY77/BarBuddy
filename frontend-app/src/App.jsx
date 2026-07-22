@@ -645,18 +645,13 @@ function App() {
               <h3>Ингредиенты</h3>
 
               <ul className="ingredients-list">
-                {(selectedCocktail.ingredients || []).map(
-                  (ingredient, index) => (
-                    <li key={`${ingredient.name}-${index}`}>
-                      <span>{ingredient.name}</span>
-                      <strong>
-                        {ingredient.amount
-                          ? `${ingredient.amount} ${ingredient.unit || ""}`
-                          : ingredient.note || "по вкусу"}
-                      </strong>
-                    </li>
-                  )
-                )}
+                {cocktail.ingredients.map((ingredient) => (
+                  <li key={ingredient.name}>
+                    {ingredient.amount && `${ingredient.amount} `}
+                    {ingredient.unit && `${ingredient.unit} `}
+                    {ingredient.name}
+                  </li>
+                ))}
               </ul>
             </div>
 

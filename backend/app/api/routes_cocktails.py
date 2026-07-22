@@ -14,6 +14,34 @@ DATA_PATH = (
     / "cocktails_ready.json"
 )
 
+from app.ingredient_translations import INGREDIENT_TRANSLATIONS
+
+
+def translate_ingredients(ingredients: list[dict]) -> list[dict]:
+    translated = []
+
+    for item in ingredients:
+        original_name = (
+            item.get("name")
+            or item.get("ingredient")
+            or ""
+        )
+
+        translated.append(
+            {
+                **item,
+                "name": INGREDIENT_TRANSLATIONS.get(
+                    original_name,
+                    original_name,
+                ),
+                "ingredient": INGREDIENT_TRANSLATIONS.get(
+                    original_name,
+                    original_name,
+                ),
+            }
+        )
+
+    return translated
 
 def load_cocktails() -> list[dict]:
     with DATA_PATH.open(encoding="utf-8") as file:

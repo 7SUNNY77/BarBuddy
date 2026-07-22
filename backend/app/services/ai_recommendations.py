@@ -66,11 +66,76 @@ Rules:
 - include_ingredients and exclude_ingredients must contain short English
   ingredient categories where possible: rum, vodka, gin, tequila, whiskey,
   coffee, cream, citrus, sparkling_wine.
-- Do not invent cocktails or recipes.
+- Do not invent cocktails, recipes, ingredients, or tags.
 - reason must be one short Russian sentence.
 - If a preference is absent, use an empty list or "any".
 
-User request:
+Taste interpretation:
+- "кислый", "кисленький", "с кислинкой", "кисленькое" -> "кислый".
+- "очень кислый", "максимально кислый", "жёстко кислый",
+  "чтобы скулы сводило", "терпкий" -> "кислый".
+- "сладкий", "сладенький", "десертный" -> "сладкий".
+- "горький", "биттерный", "как негрони" -> "горький".
+- "свежий", "освежающий", "летний", "лёгкий" -> "освежающий".
+- "кофейный", "с кофе", "как эспрессо" -> "кофейный".
+- "фруктовый", "ягодный", "персиковый", "тропический" -> "фруктовый".
+- "игристый", "с пузырьками", "шампанское" -> "игристый".
+- "сливочный", "молочный", "как десерт" -> "сливочный", "десертный".
+- "пряный", "острый", "имбирный", "с перцем" -> "пряный".
+- "травяной", "ботанический", "на джине" -> "травяной".
+
+Strength interpretation:
+- "лёгкий", "некрепкий", "слабоалкогольный" -> "light".
+- "средней крепости", "умеренно крепкий" -> "medium".
+- "крепкий", "убойный", "покрепче" -> "strong".
+- Do not infer "strong" from "жёстко кислый", "очень кислый",
+  "терпкий", "горький" or "острый".
+- If strength is not explicitly mentioned, use "any".
+
+Ingredient interpretation:
+- "без рома", "не люблю ром", "не с ромом" -> exclude_ingredients: ["rum"].
+- "без водки" -> exclude_ingredients: ["vodka"].
+- "без джина" -> exclude_ingredients: ["gin"].
+- "без текилы" -> exclude_ingredients: ["tequila"].
+- "без виски" -> exclude_ingredients: ["whiskey"].
+- "без кофе" -> exclude_ingredients: ["coffee"].
+- "без сливок", "без молочного" -> exclude_ingredients: ["cream"].
+- "без цитрусов", "без лимона", "без лайма" -> exclude_ingredients: ["citrus"].
+- "с ромом" -> include_ingredients: ["rum"].
+- "с джином" -> include_ingredients: ["gin"].
+- "с текилой" -> include_ingredients: ["tequila"].
+- "с виски" -> include_ingredients: ["whiskey"].
+- "с кофе" -> include_ingredients: ["coffee"].
+
+Examples:
+
+User: "Хочу жёстко кислый, чтобы скулы сводило"
+Output intent:
+- taste_tags: ["кислый"]
+- strength: "any"
+- include_ingredients: []
+- exclude_ingredients: []
+
+User: "Что-то лёгкое, летнее и с пузырьками"
+Output intent:
+- taste_tags: ["лёгкий", "освежающий", "игристый"]
+- strength: "light"
+- include_ingredients: []
+- exclude_ingredients: []
+
+User: "Как негрони, но без джина и не слишком горькое"
+Output intent:
+- taste_tags: ["горький"]
+- strength: "medium"
+- include_ingredients: []
+- exclude_ingredients: ["gin"]
+
+User: "Сладкое кофейное, но без сливок"
+Output intent:
+- taste_tags: ["сладкий", "кофейный"]
+- strength: "any"
+- include_ingredients: ["coffee"]
+- exclude_ingredients: ["cream"]
 {query}
 """
 

@@ -33,9 +33,9 @@ def to_catalog_card(cocktail: dict) -> dict:
         "ingredients": [
             {
                 **ingredient,
-                "name": INGREDIENT_TRANSLATIONS.get(
-                    ingredient["name"],
-                    ingredient["name"],
+                "ingredient": INGREDIENT_TRANSLATIONS.get(
+                    ingredient.get("ingredient", ""),
+                    ingredient.get("ingredient", ""),
                 ),
             }
             for ingredient in cocktail["ingredients"]

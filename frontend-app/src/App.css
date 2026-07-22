@@ -896,3 +896,21 @@ button {
     border-radius: 18px;
   }
 }
+
+.ingredient-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ingredient-name {
+  text-align: left;
+}
+
+.ingredient-amount {
+  flex-shrink: 0;
+  color: var(--gold, #e8bd57);
+  font-weight: 700;
+  text-align: right;
+}

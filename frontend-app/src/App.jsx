@@ -392,7 +392,7 @@ function App() {
   }
 
   async function createOrder() {
-
+    console.log("Нажали Заказать", selectedCocktail);
     if (response.status === 429) {
       throw new Error(
         "Слишком много заявок. Попробуйте позже."

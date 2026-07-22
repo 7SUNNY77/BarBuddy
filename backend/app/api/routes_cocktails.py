@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-
+from app.ingredient_translations import INGREDIENT_TRANSLATIONS
 from fastapi import APIRouter, HTTPException, Query
 
 router = APIRouter(
@@ -31,7 +31,7 @@ def to_catalog_card(cocktail: dict) -> dict:
         "is_alcoholic": cocktail.get("is_alcoholic", ""),
         "taste_tags": cocktail.get("taste_tags", []),
         "ingredients": [
-            ingredient["name"]
+            INGREDIENT_TRANSLATIONS.get(ingredient, ingredient)
             for ingredient in cocktail["ingredients"]
         ],
     }

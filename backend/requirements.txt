@@ -4,3 +4,5 @@ pandas
 requests
 beautifulsoup4
 lxml
+python-telegram-bot==21.10
+httpx

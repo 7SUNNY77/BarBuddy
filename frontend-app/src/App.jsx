@@ -331,12 +331,7 @@ function App() {
         <h1>Каталог коктейлей</h1>
         <p className="hero-text">
           Классические коктейли с ингредиентами и инструкциями.
-        </p>
-        {userName && (
-          <p className="telegram-greeting">
-            Привет, {userName}! Найдём твой идеальный коктейль.
-          </p>
-        )}
+        </p>       
       </header>
 
       <section className="recommendation-box">

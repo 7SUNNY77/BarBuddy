@@ -2,11 +2,16 @@ import json
 from pathlib import Path
 from app.ingredient_translations import INGREDIENT_TRANSLATIONS
 from fastapi import APIRouter, HTTPException, Query
+from pydantic import BaseModel, Field
 
+from app.services.ai_recommendations import parse_cocktail_query
 router = APIRouter(
     prefix="/api/cocktails",
     tags=["Cocktails"],
 )
+
+class RecommendationRequest(BaseModel):
+    query: str = Field(min_length=3, max_length=300)
 
 DATA_PATH = (
     Path(__file__).resolve().parents[2]
@@ -58,17 +63,157 @@ def to_catalog_card(cocktail: dict) -> dict:
         "glass": cocktail.get("glass", ""),
         "is_alcoholic": cocktail.get("is_alcoholic", ""),
         "taste_tags": cocktail.get("taste_tags", []),
-        "ingredients": [
-            {
-                **ingredient,
-                "ingredient": INGREDIENT_TRANSLATIONS.get(
-                    ingredient.get("ingredient", ""),
-                    ingredient.get("ingredient", ""),
-                ),
-            }
-            for ingredient in cocktail["ingredients"]
-        ],
+        "ingredients": translate_ingredients(
+            cocktail.get("ingredients", [])
+        ),
     }
+
+INGREDIENT_ALIASES = {
+    "rum": ["rum", "rhum", "ron", "cachaça"],
+    "vodka": ["vodka"],
+    "gin": ["gin"],
+    "tequila": ["tequila", "mezcal"],
+    "whiskey": ["whiskey", "whisky", "bourbon", "scotch", "rye"],
+    "coffee": ["coffee", "espresso", "kahlúa", "coffee liqueur"],
+    "cream": ["cream", "milk", "egg white"],
+    "citrus": ["lime", "lemon", "orange", "grapefruit"],
+    "sparkling_wine": ["champagne", "prosecco", "sparkling wine"],
+}
+
+
+def get_ingredient_names(cocktail: dict) -> list[str]:
+    return [
+        (
+            item.get("name")
+            or item.get("ingredient")
+            or ""
+        ).lower()
+        for item in cocktail.get("ingredients", [])
+    ]
+
+
+def has_ingredient_group(
+    ingredient_names: list[str],
+    group: str,
+) -> bool:
+    aliases = INGREDIENT_ALIASES.get(group.lower(), [group.lower()])
+
+    return any(
+        alias in ingredient_name
+        for ingredient_name in ingredient_names
+        for alias in aliases
+    )
+
+
+def get_cocktail_tags(cocktail: dict) -> list[str]:
+    tags = cocktail.get("taste_tags", [])
+
+    if isinstance(tags, str):
+        tags = tags.split(",")
+
+    return [
+        str(tag).strip().lower()
+        for tag in tags
+        if str(tag).strip()
+    ]
+
+
+def get_cocktail_text(cocktail: dict) -> str:
+    values = [
+        cocktail.get("name_en", ""),
+        cocktail.get("name_ru", ""),
+        cocktail.get("taste_description_ru", ""),
+        cocktail.get("instructions_ru", ""),
+        cocktail.get("instructions_en", ""),
+        cocktail.get("iba_category", ""),
+    ]
+
+    return " ".join(
+        str(value).lower()
+        for value in values
+        if value
+    )
+
+
+def matches_strength(cocktail: dict, strength: str) -> bool:
+    if strength == "any":
+        return True
+
+    abv = cocktail.get("abv_estimate")
+
+    if abv is None:
+        return True
+
+    try:
+        abv = float(abv)
+    except (TypeError, ValueError):
+        return True
+
+    if strength == "light":
+        return abv <= 15
+
+    if strength == "medium":
+        return 15 < abv <= 25
+
+    if strength == "strong":
+        return abv > 25
+
+    return True
+
+
+def rank_cocktails(
+    cocktails: list[dict],
+    preferences,
+) -> list[dict]:
+    ranked = []
+
+    for cocktail in cocktails:
+        ingredient_names = get_ingredient_names(cocktail)
+
+        if any(
+            has_ingredient_group(ingredient_names, group)
+            for group in preferences.exclude_ingredients
+        ):
+            continue
+
+        score = 0
+        tags = get_cocktail_tags(cocktail)
+        searchable_text = get_cocktail_text(cocktail)
+
+        for wanted_tag in preferences.taste_tags:
+            wanted_tag = wanted_tag.lower()
+
+            if wanted_tag in tags:
+                score += 6
+
+            if wanted_tag in searchable_text:
+                score += 2
+
+        for group in preferences.include_ingredients:
+            if has_ingredient_group(ingredient_names, group):
+                score += 4
+
+        if matches_strength(cocktail, preferences.strength):
+            score += 2
+        elif preferences.strength != "any":
+            score -= 2
+
+        ranked.append(
+            {
+                "cocktail": cocktail,
+                "score": score,
+            }
+        )
+
+    ranked.sort(
+        key=lambda item: item["score"],
+        reverse=True,
+    )
+
+    return [
+        item["cocktail"]
+        for item in ranked[:3]
+    ]
 
 
 @router.get("")
@@ -140,3 +285,31 @@ def get_cocktail(cocktail_id: str) -> dict:
     
 
     return cocktail
+
+@router.post("/recommendations")
+def get_ai_recommendations(payload: RecommendationRequest):
+    try:
+        preferences = parse_cocktail_query(payload.query)
+    except Exception:
+        raise HTTPException(
+            status_code=503,
+            detail="AI recommendation service is temporarily unavailable",
+        )
+
+    cocktails = load_cocktails()
+
+    recommendations = rank_cocktails(
+        cocktails,
+        preferences,
+    )
+
+    return {
+        "query": payload.query,
+        "reason": preferences.reason,
+        "preferences": preferences.model_dump(),
+        "total": len(recommendations),
+        "recommendations": [
+            to_catalog_card(cocktail)
+            for cocktail in recommendations
+        ],
+    }

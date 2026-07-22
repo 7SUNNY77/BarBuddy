@@ -282,7 +282,8 @@ function App() {
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [tastesOpen, setTastesOpen] = useState(false);
   const [selectedCocktail, setSelectedCocktail] = useState(null);
-
+  const [recommendationReason, setRecommendationReason] = useState("");
+  const [recommendationLoading, setRecommendationLoading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [detailsLoading, setDetailsLoading] = useState(false);
   const [error, setError] = useState("");
@@ -387,88 +388,48 @@ function App() {
     }
   }
 
-  function getRecommendations() {
-    function normalizeWord(word) {
-      return word
-        .toLowerCase()
-        .replace(/ё/g, "е")
-        .replace(/[,.!?"'«»()]/g, "")
-        .replace(
-          /(иями|ями|ами|иями|ыми|ими|ого|ему|ому|ыми|ими|ий|ый|ой|ая|яя|ое|ее|ые|ие|ую|юю|ом|ем|ам|ям|ах|ях|ов|ев|а|я|ы|и|е|у|ю)$/u,
-          ""
-        );
-    }
+  async function getRecommendations() {
+    const query = recommendationQuery.trim();
 
-    function getWords(text) {
-      return text
-        .toLowerCase()
-        .replace(/ё/g, "е")
-        .split(/\s+/)
-        .map(normalizeWord)
-        .filter((word) => word.length >= 3);
-    }
-
-    const queryWords = getWords(recommendationQuery);
-
-    if (queryWords.length === 0) {
+    if (!query) {
       setRecommendations([]);
+      setRecommendationReason("");
       setRecommendationVisible(true);
       return;
     }
 
-    const rankedCocktails = cocktails
-      .map((cocktail) => {
-        const tags = cocktail.taste_tags || [];
+    try {
+      setRecommendationLoading(true);
+      setRecommendationVisible(true);
+      setRecommendationReason("");
 
-        const ingredients = (cocktail.ingredients || []).map((ingredient) =>
-          typeof ingredient === "string" ? ingredient : ingredient.name || ""
-        );
+      const response = await fetch(`${API_URL}/recommendations`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ query }),
+      });
 
-        const searchableItems = [
-          cocktail.name_en || "",
-          cocktail.name_ru || "",
-          cocktail.iba_category || "",
-          ...tags,
-          ...ingredients,
-        ];
+      if (!response.ok) {
+        throw new Error(`Ошибка AI-подбора: ${response.status}`);
+      }
 
-        const matches = searchableItems.filter((item) => {
-          const itemWords = getWords(item);
+      const data = await response.json();
 
-          return queryWords.some((queryWord) =>
-            itemWords.some(
-              (itemWord) =>
-                itemWord.includes(queryWord) || queryWord.includes(itemWord)
-            )
-          );
-        });
-
-        const matchedTags = tags.filter((tag) => matches.includes(tag));
-        const matchedIngredients = ingredients.filter((ingredient) =>
-          matches.includes(ingredient)
-        );
-
-        const score =
-          matchedTags.length * 5 +
-          matchedIngredients.length * 3 +
-          matches.length;
-
-        return {
-          ...cocktail,
-          score,
-          reasons: [...new Set([...matchedTags, ...matchedIngredients])].slice(
-            0,
-            3
-          ),
-        };
-      })
-      .filter((cocktail) => cocktail.score > 0)
-      .sort((first, second) => second.score - first.score)
-      .slice(0, 3);
-
-    setRecommendations(rankedCocktails);
-    setRecommendationVisible(true);
-  }
+      setRecommendations(data.recommendations || []);
+      setRecommendationReason(data.reason || "");
+    } catch (requestError) {
+      console.error(requestError);
+      setRecommendations([]);
+      setRecommendationReason("");
+      setError(
+        "Не удалось подобрать коктейли. Попробуйте ещё раз."
+      );
+    } finally {
+      setRecommendationLoading(false);
+    }
+  }  
 
   useEffect(() => {
     const telegram = window.Telegram?.WebApp;
@@ -514,8 +475,12 @@ function App() {
             }}
           />
 
-          <button type="button" onClick={getRecommendations}>
-            Подобрать
+          <button
+            type="button"
+            onClick={getRecommendations}
+            disabled={recommendationLoading}
+          >
+            {recommendationLoading ? "Подбираем..." : "Подобрать"}
           </button>
         </div>
 
@@ -525,8 +490,18 @@ function App() {
 
         {recommendationVisible && (
           <div className="recommendation-results">
-            {recommendations.length > 0 ? (
+            {recommendationLoading ? (
+              <p className="recommendation-empty">
+                AI подбирает коктейли...
+              </p>
+            ) : recommendations.length > 0 ? (
               <>
+                {recommendationReason && (
+                  <p className="ai-recommendation-reason">
+                    {recommendationReason}
+                  </p>
+                )}
+
                 <p className="results-title">Подходящие коктейли</p>
 
                 <div className="recommendation-grid">
@@ -545,19 +520,19 @@ function App() {
                         {cocktail.name_ru}
                       </span>
 
-                      {cocktail.reasons.length > 0 && (
-                        <span className="recommendation-reason">
-                          Подходит: {cocktail.reasons.join(", ")}
-                        </span>
-                      )}
+                      <span className="recommendation-reason">
+                        Подходит: {(cocktail.taste_tags || [])
+                          .slice(0, 3)
+                          .join(", ")}
+                      </span>
                     </button>
                   ))}
                 </div>
               </>
             ) : (
               <p className="recommendation-empty">
-                Не нашёл точного совпадения. Попробуй указать вкус, алкоголь или
-                ингредиент: например, «ромовый», «кислый», «джин».
+                Не нашёл подходящих вариантов. Попробуй описать вкус,
+                крепость или исключить конкретный ингредиент.
               </p>
             )}
           </div>

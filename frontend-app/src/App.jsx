@@ -655,8 +655,14 @@ function App() {
                   const unit = ingredient.unit || "";
 
                   return (
-                    <li key={`${name}-${index}`}>
-                      {[amount, unit, name].filter(Boolean).join(" ")}
+                    <li className="ingredient-row" key={`${name}-${index}`}>
+                      <span className="ingredient-name">{name}</span>
+
+                      {(amount || unit) && (
+                        <span className="ingredient-amount">
+                          {[amount, unit].filter(Boolean).join(" ")}
+                        </span>
+                      )}
                     </li>
                   );
                 })}
